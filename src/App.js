@@ -4,6 +4,7 @@ import { Button as RTButton } from 'react-toolbox/lib/button';
 import { Button as ElementalButton } from 'elemental' 
 import { Button as RDButton } from 'react-desktop/macOs';
 import { Button as RebassButton } from 'rebass';
+import { Button as BootstrapButton} from 'react-bootstrap';
 
 import logo from './logo.svg';
 import './App.css';
@@ -21,6 +22,7 @@ class App extends Component {
 		<div><ElementalButton>Elemental UI Button</ElementalButton></div>
 		<div><RDButton>React Desktop Button</RDButton></div>
 		<div><RebassButton>Rebass Button</RebassButton></div>
+		<div><BootstrapButton>Bootstrap Button</BootstrapButton></div>
       </div>
     );
   }
