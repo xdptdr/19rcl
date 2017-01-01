@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import belle from 'belle';
 import { Button as RTButton } from 'react-toolbox/lib/button';
+import { Button as ElementalButton } from 'elemental' 
 
 import logo from './logo.svg';
 import './App.css';
@@ -15,6 +16,7 @@ class App extends Component {
         </div>
         <div><belle.Button>Belle Button</belle.Button></div>
 		<div><RTButton label="React Toolbox Button"></RTButton></div>
+		<div><ElementalButton>Elemental UI Button</ElementalButton></div>
       </div>
     );
   }
