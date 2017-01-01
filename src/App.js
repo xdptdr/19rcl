@@ -9,6 +9,8 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import RaisedButton  from 'material-ui/RaisedButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import DropdownList from 'react-widgets/lib/DropdownList';
+
 
 import logo from './logo.svg';
 import './App.css';
@@ -32,6 +34,7 @@ class App extends Component {
 				<RaisedButton label="Material UI Button" />
 			</MuiThemeProvider>
 		</div>
+		<DropdownList data={['orange','red','blue']} />
       </div>
     );
   }
