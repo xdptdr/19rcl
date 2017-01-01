@@ -10,7 +10,7 @@ import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import RaisedButton  from 'material-ui/RaisedButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import DropdownList from 'react-widgets/lib/DropdownList';
-
+import { Button as MuiButton } from 'muicss/react';
 
 import logo from './logo.svg';
 import './App.css';
@@ -34,7 +34,8 @@ class App extends Component {
 				<RaisedButton label="Material UI Button" />
 			</MuiThemeProvider>
 		</div>
-		<DropdownList data={['orange','red','blue']} />
+		<div><DropdownList data={['react-widgets','orange','red','blue']} /></div>
+		<div><MuiButton >MUI Button</MuiButton></div>
       </div>
     );
   }
