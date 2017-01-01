@@ -5,6 +5,10 @@ import { Button as ElementalButton } from 'elemental'
 import { Button as RDButton } from 'react-desktop/macOs';
 import { Button as RebassButton } from 'rebass';
 import { Button as BootstrapButton} from 'react-bootstrap';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import RaisedButton  from 'material-ui/RaisedButton';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import logo from './logo.svg';
 import './App.css';
@@ -23,6 +27,11 @@ class App extends Component {
 		<div><RDButton>React Desktop Button</RDButton></div>
 		<div><RebassButton>Rebass Button</RebassButton></div>
 		<div><BootstrapButton>Bootstrap Button</BootstrapButton></div>
+		<div>
+			<MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+				<RaisedButton label="Material UI Button" />
+			</MuiThemeProvider>
+		</div>
       </div>
     );
   }
